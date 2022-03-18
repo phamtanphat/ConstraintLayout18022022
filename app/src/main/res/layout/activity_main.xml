@@ -7,38 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        app:layout_constraintBottom_toBottomOf="@id/barrier"
-        android:id="@+id/textView1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/textView2"
-        android:text="Similar to a guideline, a barrier is an invisible line that you can constrain views to. Except a barrier does not define its own position; instead, the barrier position moves based on the position of views contained within it. This is useful when you want to constrain a view to the a set of views rather than to one specific view."
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        app:layout_constraintBottom_toBottomOf="@id/barrier"
-        android:layout_marginTop="20dp"
-        android:id="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@id/textView1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Click Guidelines  in the toolbar, and then click Add Vertical Barrier or Add Horizontal Barrier."
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
-
-    <androidx.constraintlayout.widget.Barrier
-        app:constraint_referenced_ids="textView1,textView2"
-        app:barrierDirection="bottom"
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier"
-        android:text="Click me"
+        android:textSize="25sp"
+        android:text="View 1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
