@@ -6,18 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
-    <ImageView
-        
-        app:layout_constraintDimensionRatio="750:1334"
-        app:layout_constraintTop_toTopOf="parent"
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewGreen"
+        android:id="@+id/textViewRed"
+        android:background="#f20"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="40dp"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewRed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewBlue"
+        android:id="@+id/textViewGreen"
+        android:background="#6CDD95"
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewGreen"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/background"
-        android:layout_width="100dp"
-        android:layout_height="0dp"/>
+        android:id="@+id/textViewBlue"
+        android:background="#2196F3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
